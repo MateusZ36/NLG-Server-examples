@@ -1,0 +1,19 @@
+version: "2.0"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye_en
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot_en
+
+- rule: Inform and fill name slot
+  steps:
+  - intent: inform_name
+  - action: action_set_name_slot
+  - action: utter_greet_en

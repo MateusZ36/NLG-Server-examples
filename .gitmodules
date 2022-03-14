@@ -1,0 +1,3 @@
+[submodule "nlg_server"]
+	path = nlg_server
+	url = https://github.com/MateusZ36/NLG-Server

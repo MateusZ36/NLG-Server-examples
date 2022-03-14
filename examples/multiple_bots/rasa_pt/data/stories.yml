@@ -1,0 +1,30 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet_pt
+  - intent: mood_great
+  - action: utter_happy_pt
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet_pt
+  - intent: mood_unhappy
+  - action: utter_cheer_up_pt
+  - action: utter_did_that_help_pt
+  - intent: affirm
+  - action: utter_happy_pt
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet_pt
+  - intent: mood_unhappy
+  - action: utter_cheer_up_pt
+  - action: utter_did_that_help_pt
+  - intent: deny
+  - action: utter_goodbye_pt

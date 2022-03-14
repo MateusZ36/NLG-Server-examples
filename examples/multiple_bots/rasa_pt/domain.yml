@@ -1,0 +1,25 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - get_started
+
+actions:
+  - utter_test
+  - utter_greet_pt
+  - utter_cheer_up_pt
+  - utter_did_that_help_pt
+  - utter_happy_pt
+  - utter_goodbye_pt
+  - utter_iamabot_pt
+  - utter_get_started
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
